@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unblocked School Games</title>
+  <style>
+    body {
+      background-color: #222;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .header img {
+      height: 80px;
+      margin-right: 20px;
+    }
+    .search-bar {
+      margin-bottom: 20px;
+    }
+    .search-bar input {
+      padding: 8px 14px;
+      width: 250px;
+      border: none;
+      border-radius: 8px;
+      background-color: #007BFF;
+      color: white;
+      font-size: 14px;
+    }
+    .search-bar input::placeholder {
+      color: white;
+    }
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 20px;
+      padding: 20px;
+      justify-items: center;
+    }
+    .game {
+      background: #4CAF50;
+      border-radius: 12px;
+      padding: 10px;
+      width: 120px;
+      height: 140px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: transform 0.2s;
+    }
+    .game:hover {
+      transform: scale(1.05);
+    }
+    .game img {
+      width: 100%;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="controller-on-fire.png" alt="Logo">
+    <img src="unblocked-title.png" alt="Unblocked School Games">
+  </div>
+  <div class="search-bar">
+    <input type="text" id="search" placeholder="Search for Games 🔍" onkeyup="filterGames()">
+  </div>
+  <div class="games-grid" id="games">
+
+    <a class="game" href="https://www.crazygames.com/game/italian-brainrot-clicker" target="_blank">
+      <img src="logo.png" alt="Italian Brainrot Clicker">
+      <div>Italian Brainrot Clicker</div>
+    </a>
+
+    <a class="game" href="https://www.crazygames.com/game/sky-riders" target="_blank">
+      <img src="logo.png" alt="Sky Riders">
+      <div>Sky Riders</div>
+    </a>
+
+    <a class="game" href="https://www.crazygames.com/game/space-waves" target="_blank">
+      <img src="logo.png" alt="Space Waves">
+      <div>Space Waves</div>
+    </a>
+
+    <a class="game" href="https://www.crazygames.com/game/rally-racer-dirt" target="_blank">
+      <img src="logo.png" alt="Rally Racer Dirt">
+      <div>Rally Racer Dirt</div>
+    </a>
+
+    <a class="game" href="https://www.crazygames.com/game/smash-karts" target="_blank">
+      <img src="logo.png" alt="Smash Karts">
+      <div>Smash Karts</div>
+    </a>
+
+    <a class="game" href="https://www.crazygames.com/game/basketball-stars" target="_blank">
+      <img src="logo.png" alt="Basketball Stars">
+      <div>Basketball Stars</div>
+    </a>
+
+    <a class="game" href="https://www.crazygames.com/game/corn-tycoon" target="_blank">
+      <img src="logo.png" alt="Corn Tycoon">
+      <div>Corn Tycoon</div>
+    </a>
+
+    <a class="game" href="https://www.crazygames.com/game/2048" target="_blank">
+      <img src="logo.png" alt="2048">
+      <div>2048</div>
+    </a>
+
+    <a class="game" href="https://www.crazygames.com/game/snakeio" target="_blank">
+      <img src="logo.png" alt="Snake (snake.io)">
+      <div>Snake (snake.io)</div>
+    </a>
+
+    <a class="game" href="https://www.crazygames.com/game/capybara-clicker" target="_blank">
+      <img src="logo.png" alt="Capybara Clicker">
+      <div>Capybara Clicker</div>
+    </a>
+
+    <a class="game" href="https://www.crazygames.com/game/holeyio" target="_blank">
+      <img src="logo.png" alt="Holey (holey.io battle royale)">
+      <div>Holey (holey.io battle royale)</div>
+    </a>
+
+    <a class="game" href="https://www.crazygames.com/game/stunt-paradise" target="_blank">
+      <img src="logo.png" alt="Stunt Paradise">
+      <div>Stunt Paradise</div>
+    </a>
+
+    <a class="game" href="https://www.crazygames.com/game/slice-master" target="_blank">
+      <img src="logo.png" alt="Slice Master">
+      <div>Slice Master</div>
+    </a>
+
+    <a class="game" href="https://www.crazygames.com/game/stickman-clash" target="_blank">
+      <img src="logo.png" alt="Stickman Clash">
+      <div>Stickman Clash</div>
+    </a>
+
+    <a class="game" href="https://www.crazygames.com/game/evowarsio" target="_blank">
+      <img src="logo.png" alt="EvoWars(evowars.io)">
+      <div>EvoWars(evowars.io)</div>
+    </a>
+
+    <a class="game" href="https://www.crazygames.com/game/bloxdio" target="_blank">
+      <img src="logo.png" alt="Bloxd(bloxd.io)">
+      <div>Bloxd(bloxd.io)</div>
+    </a>
+
+    <a class="game" href="https://www.crazygames.com/game/planet-smash" target="_blank">
+      <img src="logo.png" alt="Planet Smash">
+      <div>Planet Smash</div>
+    </a>
+
+    <a class="game" href="https://www.crazygames.com/game/mx-offroad-master" target="_blank">
+      <img src="logo.png" alt="MX Offroad Master">
+      <div>MX Offroad Master</div>
+    </a>
+
+    <a class="game" href="https://www.crazygames.com/game/pencil-rush" target="_blank">
+      <img src="logo.png" alt="Pencil Rush">
+      <div>Pencil Rush</div>
+    </a>
+
+    <a class="game" href="https://www.crazygames.com/game/stickman-tennis-3d" target="_blank">
+      <img src="logo.png" alt="Stickman Tennis 3D">
+      <div>Stickman Tennis 3D</div>
+    </a>
+
+    <a class="game" href="https://www.crazygames.com/game/draw-line" target="_blank">
+      <img src="logo.png" alt="Draw Line">
+      <div>Draw Line</div>
+    </a>
+
+    <a class="game" href="https://www.crazygames.com/game/burger-cafe" target="_blank">
+      <img src="logo.png" alt="Burger Cafe">
+      <div>Burger Cafe</div>
+    </a>
+
+    <a class="game" href="https://www.crazygames.com/game/rolling-ball-space-race" target="_blank">
+      <img src="logo.png" alt="Rolling Balls Space Race">
+      <div>Rolling Balls Space Race</div>
+    </a>
+
+    <a class="game" href="https://www.crazygames.com/game/stupidity-test" target="_blank">
+      <img src="logo.png" alt="Stupidity Test">
+      <div>Stupidity Test</div>
+    </a>
+
+  </div>
+  <script>
+    function filterGames() {
+      const input = document.getElementById('search').value.toLowerCase();
+      const games = document.querySelectorAll('.game');
+      games.forEach(game => {
+        const title = game.textContent.toLowerCase();
+        game.style.display = title.includes(input) ? 'flex' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>
